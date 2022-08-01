@@ -1,0 +1,14 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const Sorter_1 = require("./Sorter");
+const CharactersCollection_1 = require("./CharactersCollection");
+// const numbersCollection = new NumbersCollection([25, 3, -5, 0]);
+// const sorter = new Sorter(numbersCollection);
+// console.log("=> Antes de:", numbersCollection.data);
+// sorter.sort();
+// console.log("=> Después de:", numbersCollection.data);
+const charactersCollection = new CharactersCollection_1.CharactersCollection("ckjsObhFba");
+const sorter = new Sorter_1.Sorter(charactersCollection);
+console.log("=> Antes de:", charactersCollection.data);
+sorter.sort();
+console.log("=> Después de:", charactersCollection.data);
